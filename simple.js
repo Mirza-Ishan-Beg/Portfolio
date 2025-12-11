@@ -12,6 +12,9 @@ function downloadResume(reference_site) {
         a.click();
         document.body.removeChild(a);
     } else {
-        alert("No definitive Resume uploaded yet.");
+        let resume_button = document.getElementsByName("resume-button")[0];
+        console.log(`${resume_button.innerText} not uploaded here yet so routing to LinkedIn...`);
+        resume_button.innerText = "LinkedIn";
+        window.open(`https://www.linkedin.com/in/mirza-ishan-beg-1942b6361/`, '_blank');
     }
 }

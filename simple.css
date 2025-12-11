@@ -117,8 +117,15 @@ body {
 /*Center Any Text For Title*/
 
 .center-title {
+    max-width: 88ch;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
+    
 }
+/* font-types */
+
 .font-type-card1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #999;
