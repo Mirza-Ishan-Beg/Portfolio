@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/*Some major CSS structures*/
+
+.sidebar {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(54, 7, 7, 0.575);
+}
+
+.top-options-header {
+    flex: 1 1 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+.profile-picture-header {
+    flex: 0 0 auto;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: not-allowed;
+    border-radius: 64px;
+}
+
+.flex-container button {
+    background-color: rgba(107, 94, 94, 0.411);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    gap: 4px;
+}
+
+.container-intro {
+    display: grid;
+    border-radius: 8px;
+    background-color: rgba(7, 30, 44, 0.922);
+    width: auto;
+}
+
+.flex-container-prof-github-cards {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*height: 90vh;*/
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.prof-github-cards {
+    display: grid;
+    flex: 1;
+    width: 250px;
+    height: 250px;
+    padding: 12px;
+    background: linear-gradient(0deg, #060606, rgb(97, 8, 8), #030303 );
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 2px;
+    /*background-color: rgba(50,50,50,.4);*/
+}
+
+.side-progress {
+    flex: 0 0 10%;
+    width: 120px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.main-section {
+    display: flex;
+    flex: 0 0 90%;
+    width: 300px;
+    box-sizing: border-box;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*BORDER DECORATIONS*/
+
+.border-deco-0 {
+    border-right: 8px solid;
+    border-right-color: rgba(255, 0, 0, 0.2);
+}
+
+.border-deco-4 {
+    border: 8px solid;
+    border-color: rgb(28, 0, 0);
+}
+
+.card-picture-prof-github {
+    width: 80px;
+    height: 80px;
+}
+
+/*Center Any Text For Title*/
+
+.center-title {
+    text-align: center;
+}
+.font-type-card1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #999;
+}
+.font-type-terminal-like {
+    font-family: 'Courier New', Courier, monospace;
+    color: #999;
+}
+
+/*Very specific appliers*/
+.bold-100 {
+    font-weight: 100;
+}
