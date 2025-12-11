@@ -73,7 +73,6 @@ body {
     width: 250px;
     height: 250px;
     padding: 12px;
-    background: linear-gradient(0deg, #060606, rgb(97, 8, 8), #030303 );
     box-sizing: border-box;
     justify-content: center;
     justify-items: center;
@@ -138,4 +137,27 @@ body {
 /*Very specific appliers*/
 .bold-100 {
     font-weight: 100;
+}
+
+/* ROUNDING FORMATS */
+.round-border-4px {
+    border-radius: 4px;
+}
+
+/* MARGIN FORMATS */
+.margin-bottom-4px {
+    margin: 4px;
+}
+
+/*LINEAR COLOR GRADIENTS*/
+.card-color-gradient {
+    background: linear-gradient(0deg, #060606, rgb(97, 8, 8), #030303 );
+}
+
+.intro-color-gradient {
+    background: linear-gradient(0deg, #060606, rgba(7, 30, 44, 0.922) 90%, #030303 );
+}
+
+.title-gradient {
+    background: linear-gradient(0deg, #060606, rgba(54, 7, 7, 0.575) 90%, #030303 );
 }
