@@ -1,3 +1,7 @@
+:root{
+    --card-color-dial: 25;
+    --title-color-dial: 30;
+}
 body {
     background-color: rgb(0, 0, 0);
 }
@@ -151,13 +155,39 @@ body {
 
 /*LINEAR COLOR GRADIENTS*/
 .card-color-gradient {
-    background: linear-gradient(0deg, #060606, rgb(97, 8, 8), #030303 );
+    background: linear-gradient(
+        0deg, rgba(6, 6, 6, 1),
+        rgb(var(--card-color-dial), var(--card-color-dial), var(--card-color-dial)) 10%,
+        rgb(var(--card-color-dial), var(--card-color-dial), var(--card-color-dial)) 90%,
+        rgba(3, 3, 3, 1));
+}
+
+.card-color-gradient:hover {
+    background: linear-gradient(
+        0deg, rgba(6, 6, 6, 1),
+        rgb(var(--card-color-dial), var(--card-color-dial), var(--card-color-dial)) 5%,
+        rgb(var(--card-color-dial), var(--card-color-dial), var(--card-color-dial)) 95%,
+        rgba(3, 3, 3, 1));
+}
+
+.card-color-gradient-construction {
+    background: radial-gradient(circle at 50% 42%, rgba(6, 6, 6, 1), rgb(97, 8, 8) 25%, rgba(3, 3, 3, 1) 50%);
 }
 
 .intro-color-gradient {
-    background: linear-gradient(0deg, #060606, rgba(7, 30, 44, 0.922) 90%, #030303 );
+    background: linear-gradient(0deg, rgba(3, 3, 3, 1),rgba(30, 30, 30, 0.922) 4%, rgba(30, 30, 30, 0.922) 97%, rgba(3, 3, 3, 1));
 }
 
 .title-gradient {
-    background: linear-gradient(0deg, #060606, rgba(54, 7, 7, 0.575) 90%, #030303 );
+    background: linear-gradient(0deg,
+        rgba(6, 6, 6, 1),
+        rgba(
+            var(--title-color-dial),
+            var(--title-color-dial),
+            var(--title-color-dial), 1) 5%,
+        rgba(
+            var(--title-color-dial),
+            var(--title-color-dial), 
+            var(--title-color-dial), 1) 95%,
+          rgba(3, 3, 3, 1));
 }
