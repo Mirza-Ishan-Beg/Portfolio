@@ -1,0 +1,195 @@
+@media (min-width: 960px) {
+    #mobile {
+        display: none;
+    }
+
+    :root{
+        --card-color-dial: 25;
+        --title-color-dial: 30;
+
+        --btn-font: clamp(0.78rem, 1.6vw, 1rem);
+        --btn-font-small: clamp(0.68rem, 1.2vw, 0.88rem);
+        --cards-link-and-para-font: clamp(0.95rem, 1.6vw, 0.95rem);
+    }
+
+    .flex-container {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background: rgba(54, 7, 7, 0.575);
+    }
+
+    .top-options-header {
+        flex: 0 1 auto;
+        min-width: 3.5rem;
+        padding: 0.75rem 1.25rem;
+        font-size: var(--btn-font);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: none;
+        border-radius: 0.125rem;
+    }
+
+    .profile-picture-header {
+        flex: 0 0 auto;
+        width: 4.25rem;
+        height: 4.25rem;
+        object-fit: cover;
+        cursor: not-allowed;
+        border-radius: 25%;
+    }
+
+    .flex-container button {
+        background-color: rgba(107, 94, 94, 0.411);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .container-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        gap: 0.25rem;
+    }
+
+    .container-intro {
+        display: grid;
+        border-radius: 0.5rem;
+        background-color: rgba(7, 30, 44, 0.922);
+        width: auto;
+    }
+
+    .flex-container-prof-github-cards {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        /*height: 90vh;*/
+        gap: 1.25rem;
+        align-items: flex-start;
+    }
+
+    .prof-github-cards {
+        display: grid;
+        flex: 1;
+        min-height: 15.625rem;
+        width: 100%;
+        max-width: auto;
+        padding: 0.75rem;
+        box-sizing: border-box;
+        justify-content: center;
+        justify-items: center;
+        border-radius: 0.125rem;
+        /*background-color: rgba(50,50,50,.4);*/
+    }
+
+    .prof-github-cards p,
+    .prof-github-cards a {
+        font-size: var(--cards-link-and-para-font);
+    }
+
+    /*BORDER DECORATIONS*/
+
+    .border-deco-0 {
+        border-right: 0.5rem solid;
+        border-right-color: rgba(255, 0, 0, 0.2);
+    }
+
+    .border-deco-4 {
+        border: 0.5rem solid;
+        border-color: rgb(28, 0, 0);
+    }
+
+    .card-picture-prof-github {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    /*Center Any Text For Title*/
+
+    .center-title {
+        max-width: 88ch;
+        margin: auto;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+        
+    }
+    /* font-types */
+
+    .font-type-card1 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #999;
+    }
+    .font-type-terminal-like {
+        font-family: 'Courier New', Courier, monospace;
+        color: #999;
+    }
+
+    /*Very specific appliers*/
+    .bold-100 {
+        font-weight: 100;
+    }
+
+    /* ROUNDING FORMATS */
+    .round-border-4px {
+        border-radius: 0.25rem;
+    }
+
+    /* MARGIN FORMATS */
+    .margin-bottom-4px {
+        margin: 0.25rem;
+    }
+
+    /*LINEAR COLOR GRADIENTS*/
+    .card-color-gradient {
+        background: linear-gradient(
+            0deg, rgba(6, 6, 6, 1),
+            rgb(var(--card-color-dial), var(--card-color-dial), var(--card-color-dial)) 10%,
+            rgb(var(--card-color-dial), var(--card-color-dial), var(--card-color-dial)) 90%,
+            rgba(3, 3, 3, 1));
+    }
+
+    .card-color-gradient:hover {
+        background: linear-gradient(
+            0deg, rgba(6, 6, 6, 1),
+            rgb(var(--card-color-dial), var(--card-color-dial), var(--card-color-dial)) 5%,
+            rgb(var(--card-color-dial), var(--card-color-dial), var(--card-color-dial)) 95%,
+            rgba(3, 3, 3, 1));
+    }
+
+    .card-color-gradient-construction {
+        background: radial-gradient(circle at 50% 42%, rgba(6, 6, 6, 1), rgb(97, 8, 8) 25%, rgba(3, 3, 3, 1) 50%);
+    }
+
+    .intro-color-gradient {
+        background: linear-gradient(0deg, rgba(3, 3, 3, 1),rgba(30, 30, 30, 0.922) 4%, rgba(30, 30, 30, 0.922) 97%, rgba(3, 3, 3, 1));
+    }
+
+    .title-gradient {
+        background: linear-gradient(0deg,
+            rgba(6, 6, 6, 1),
+            rgba(
+                var(--title-color-dial),
+                var(--title-color-dial),
+                var(--title-color-dial), 1) 5%,
+            rgba(
+                var(--title-color-dial),
+                var(--title-color-dial), 
+                var(--title-color-dial), 1) 95%,
+            rgba(3, 3, 3, 1));
+    }
+
+    /* SPACERS */
+    .spacer {
+    flex: 1 1 auto;
+    min-width: 0;
+    }
+}

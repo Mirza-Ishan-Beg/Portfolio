@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.sidebar {
+    display: none;
+}
+
+/* SPACERS */
+.spacer {
+   flex: 1 1 auto;
+   min-width: 0;
+}

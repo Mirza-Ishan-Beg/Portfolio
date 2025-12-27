@@ -1,0 +1,179 @@
+/* MOBILE COMPATIBILITY SECTION */
+/*
+- top-options-header
+- profile-picture-header
++ font-type-terminal-like
+- round-border-4px
++ flex-container
+- margin-bottom-4px
+- title-gradient
+- spacer
+++ flex-container-buttons
+++ adjust-to-title-links-hanger
++ container-content
++ container-intro
+- center-title
+- intro-color-gradient
+- flex-container-prof-github-cards
+- prof-github-cards
+- card-color-gradient
+*/
+
+
+@media (max-width: 960px) {
+    #desktop {
+        display: none;
+    }
+    :root {
+        --backdrop: rgba(8, 7, 7, 1);
+        --border-contents: rgba(150, 150, 150, 1)
+
+        --card-color-dial: 25;
+        --title-color-dial: 30;
+
+        --btn-font: clamp(0.7rem, 1.2vw, 0.88rem);
+        --title-font: clamp(0.77rem, 1.3vw, 0.95rem);
+        --cards-link-and-para-font: clamp(0.95rem, 1.6vw, 0.95rem);
+    }
+    body {
+        background: var(--backdrop)
+    }
+    
+    .flex-container {
+        display: flex;
+        gap: 0.2rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0.2rem;
+        background: var(--backdrop);
+    }
+    .flex-container-buttons {
+        display: flex;
+        flex: 1;
+        gap: 0.2rem;
+        padding: 0.2;
+        background: rgba(54, 7, 7, 0.0);
+        flex-direction: column;
+    }
+    .top-options-header {
+        padding: 0.42rem 0.6rem;
+    }
+    .profile-picture-header {
+        flex: 0 0 auto;
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        cursor: not-allowed;
+        border-radius: 25%;
+    }
+    .flex-container-prof-github-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .prof-github-cards {
+        width: 100%;
+        max-width: 95%;
+    }
+    .adjust-to-title-links-hanger {
+        width: 32px;
+        height: 96px;
+        flex: none;
+    }
+
+    /* INTRO RELATED */
+    .container-content {
+        display: flex;
+        flex: 0 0;
+        flex-direction: column;
+        gap: 4px;
+        align-items: stretch;
+    }
+    .container-intro {
+        border: 2px solid rgba(150, 150, 150, 1);
+        border-radius: 8px;
+        border-style: solid;
+
+    }
+    .center-title {
+        font-size: var(--title-font);
+        font-weight: 0;
+        text-align: center;
+    }
+
+    /* PROJECT CARDS */
+    .flex-container-prof-github-cards {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid rgba(150, 150, 150, 1);
+        border-radius: 8px;
+        padding: 4px;
+        align-items: stretch;
+        justify-content: center;
+        border-style: solid;
+    }
+    .prof-github-cards {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        border: 2px dashed rgba(100, 100, 100, 1);
+        border-radius: 8px;
+        margin: 2px;
+        padding: 4px;
+        align-items: center;
+    }
+    .flex-container-header-links {
+        display: flex;
+        flex-direction: row;
+        padding: 4px;
+        border-style: solid;
+        text-align: center;
+        border: none;
+    }
+    .resize-buttetins-titles-bar {
+        height: 32px;
+        width: 32px;
+    }
+
+
+    /* SPACERS */
+    .spacer {
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: 0.1rem;
+    }
+
+    /* BUTTONS DESIGNS */
+    .button-design-terminal-no-borders {
+        border: none;
+        background: rgba(54, 7, 7, 0);
+    }
+
+    /* Fonts */
+    .font-type-terminal-like {
+        font-family: 'Courier New', Courier, monospace;
+        color: #999;
+    }
+    .font-type-terminal-like-links {
+        font-family: 'Courier New', Courier, monospace;
+        color: #999;
+        text-decoration: underline;
+        text-align: left;
+    }
+    .font-type-terminal-like-card-title {
+        font-family: 'Courier New', Courier, monospace;
+        color: rgba(100, 100, 100, 1);
+        font-size: var(--title-font);
+    }
+    .font-type-terminal-like-card-para {
+        font-family: 'Courier New', Courier, monospace;
+        color: rgba(100, 100, 100, 1);
+        font-size: var(--btn-font);
+        text-align: center;
+    }
+    .card-project-link {
+        margin-top: auto;
+    }
+}
+
+

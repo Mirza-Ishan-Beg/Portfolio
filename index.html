@@ -4,67 +4,146 @@
     <title>
         Ishan's Portfolio
     </title>
-    <link rel="stylesheet" type="text/css" href="simple.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/mobile.css">
+    <link rel="stylesheet" type="text/css" href="styles/desktop.css">
     <script src="simple.js"></script>
 </head>
 <body>
-    <div class="flex-container round-border-4px margin-bottom-4px title-gradient">
-        <button class="top-options-header font-type-terminal-like" onclick="open_github_prof('Mirza-Ishan-Beg')">Professional GitHub Profile</button>
-        <button class="top-options-header font-type-terminal-like" onclick="open_github_prof('seedandsyntax')">Hobby GitHub Profile</button>
-        <button class="top-options-header font-type-terminal-like" name="resume-button" onclick="downloadResume('Resume')">Resume</button>
-        <!--button class="top-options-header">Opt. 4</button>
-        <button class="top-options-header">Opt. 5</button-->
-        <span class="top-options-header"></span>
-        <img class="top-options-header profile-picture-header" src="assets/Photo.jpg">
+
+    <div id="desktop" class="flex-container round-border-4px margin-bottom-4px title-gradient">
+        <button id="desktop" class="top-options-header font-type-terminal-like" onclick="open_github_prof('Mirza-Ishan-Beg')">Professional GitHub Profile</button>
+        <button id="desktop" class="top-options-header font-type-terminal-like" onclick="open_github_prof('seedandsyntax')">Hobby GitHub Profile</button>
+        <button id="desktop" class="top-options-header font-type-terminal-like" name="resume-button" onclick="downloadResume('Resume')">Resume</button>
+        <span id="desktop" class="spacer" aria-hidden="true"></span>
+        <img id="desktop" class="top-options-header profile-picture-header" src="assets/Photo.jpg">
     </div>
+    <div id="mobile" class="flex-container round-border-4px margin-bottom-4px title-gradient">
+        <div id="mobile" class="flex-container-buttons title-gradient">
+            <div id="mobile" class="flex-container-header-links title-gradient">
+                <img class="resize-buttetins-titles-bar" src="assets/Rounded-Triangle-Bulletin.png">
+                <a id="mobile" class="top-options-header font-type-terminal-like-links button-design-terminal-no-borders" onclick="open_github_prof('Mirza-Ishan-Beg')">Professional GitHub</a>
+            </div>
+            <div id="mobile" class="flex-container-header-links title-gradient">
+                <img class="resize-buttetins-titles-bar" src="assets/Rounded-Triangle-Bulletin.png">
+                <a id="mobile" class="top-options-header font-type-terminal-like-links button-design-terminal-no-borders" onclick="open_github_prof('seedandsyntax')">Hobby GitHub</a>
+            </div>
+            <div id="mobile" class="flex-container-header-links title-gradient">
+                <img class="resize-buttetins-titles-bar" src="assets/Rounded-Triangle-Bulletin.png">
+                <a id="mobile" class="top-options-header font-type-terminal-like-links button-design-terminal-no-borders" name="resume-button" onclick="downloadResume('Resume')">Resume</a>
+            </div>
+        </div>
+        <span id="mobile" class="spacer" aria-hidden="true"></span>
+        <img id="mobile" class="top-options-header profile-picture-header" src="assets/Photo.jpg">
+    </div>
+
     <div>
-        <div class="container-content margin-bottom-4px">
-            <div class="container-intro intro-color-gradient">
-                <h2 class="center-title font-type-terminal-like">Welcome to my Portfolio!</h2>
-                <p class="center-title font-type-terminal-like">I am Mirza Ishan Beg, 2nd Year Computer Applications Student from India.</p>
-                <p class="center-title font-type-terminal-like">
+        <div id="desktop" class="container-content margin-bottom-4px">
+            <div id="desktop" class="container-intro intro-color-gradient">
+                <h2 id="desktop" class="center-title font-type-terminal-like">Welcome to my Portfolio!</h2>
+                <p id="desktop" class="center-title font-type-terminal-like">I am Mirza Ishan Beg, 2nd Year Computer Applications Student from India.</p>
+                <p id="desktop" class="center-title font-type-terminal-like">
                     My enthusiam within web development, systems development as well as automation
                     all together has molded me into capable software developer,
                     and yes I also know how to exit Neovim and center a div.</p>
             </div>
-            <div class="flex-container-prof-github-cards">
-                <div class="prof-github-cards card-color-gradient">
+            <div id="desktop" class="flex-container-prof-github-cards">
+                <div id="desktop" class="prof-github-cards card-color-gradient">
                     <!--img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!"-->
-                    <h3 class="font-type-terminal-like">Repository Dependencies Checker</h3>
-                    <p class="font-type-terminal-like">Automation for python's venv libraries which checks for their PYPI documentation availability as well as their status of becoming outdated or not.</p>
-                    <a class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/Repository-Health-Checker" target="_blank">PROJECT LINK</a>
+                    <h3 id="desktop" class="font-type-terminal-like">Repository Dependencies Checker</h3>
+                    <p id="desktop" class="font-type-terminal-like">Automation for python's venv libraries which checks for their PYPI documentation availability as well as their status of becoming outdated or not.</p>
+                    <a id="desktop" class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/Repository-Health-Checker" target="_blank">PROJECT LINK</a>
                 </div>
-                <div class="prof-github-cards card-color-gradient">
+                <div id="desktop" class="prof-github-cards card-color-gradient">
                     <!--img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!"-->
-                    <h3 class="font-type-terminal-like">TimeTable Visualizer</h3>
-                    <p class="font-type-terminal-like">A simple python script that creates 24 hours clock based excel based time table visualized in high resolution .png pictures.</p>
-                    <a class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/Time-Table-Visualizer" target="_blank">PROJECT LINK</a>
+                    <h3 id="desktop" class="font-type-terminal-like">TimeTable Visualizer</h3>
+                    <p id="desktop" class="font-type-terminal-like">A simple python script that creates 24 hours clock based excel based time table visualized in high resolution .png pictures.</p>
+                    <a id="desktop" class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/Time-Table-Visualizer" target="_blank">PROJECT LINK</a>
                 </div>
-                <div class="prof-github-cards card-color-gradient">
+                <div id="desktop" class="prof-github-cards card-color-gradient">
                     <!-- img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!"-->
-                    <h3 class="font-type-terminal-like">Obsidian Canvas Parser</h3>
-                    <p class="font-type-terminal-like">A simple C++ .canvas file to read and get check, unchecked bulletins and make .md file with its own stats.</p>
-                    <a class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/Obsidian-Canvas-Parser" target="_blank">PROJECT LINK</a>
+                    <h3 id="desktop" class="font-type-terminal-like">Obsidian Canvas Parser</h3>
+                    <p id="desktop" class="font-type-terminal-like">A simple C++ .canvas file to read and get check, unchecked bulletins and make .md file with its own stats.</p>
+                    <a id="desktop" class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/Obsidian-Canvas-Parser" target="_blank">PROJECT LINK</a>
                 </div>
             </div>
-            <div class="flex-container-prof-github-cards">
-                <div class="prof-github-cards card-color-gradient">
+            <div id="desktop" class="flex-container-prof-github-cards">
+                <div id="desktop" class="prof-github-cards card-color-gradient">
                     <!--img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!"-->
-                    <h3 class="font-type-terminal-like">Invoice Registry</h3>
-                    <p class="font-type-terminal-like">Lightweight windows desktop application designed to log, manage, and track invoice records efficiently.</p>
-                    <a class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/InvoiceRegistry" target="_blank">PROJECT LINK</a>
+                    <h3 id="desktop" class="font-type-terminal-like">Invoice Registry</h3>
+                    <p id="desktop" class="font-type-terminal-like">Lightweight windows desktop application designed to log, manage, and track invoice records efficiently.</p>
+                    <a id="desktop" class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/InvoiceRegistry" target="_blank">PROJECT LINK</a>
                 </div>
-                <div class="prof-github-cards card-color-gradient">
+                <div id="desktop" class="prof-github-cards card-color-gradient">
                     <!-- img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMA   GE YET!!"-->
-                    <h3 class="font-type-terminal-like">Datewise Sheet Generator</h3>
-                    <p class="font-type-terminal-like">DSG (Datewise-Sheet-Generator) is an excel file generator, capable of generating repeated smaller chunks of a table and creating an organized, repeated tables content.</p>
-                    <a class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/Datewise-Sheet-Generator" target="_blank">PROJECT LINK</a>
+                    <h3 id="desktop" class="font-type-terminal-like">Datewise Sheet Generator</h3>
+                    <p id="desktop" class="font-type-terminal-like">DSG (Datewise-Sheet-Generator) is an excel file generator, capable of generating repeated smaller chunks of a table and creating an organized, repeated tables content.</p>
+                    <a id="desktop" class="font-type-terminal-like" href="https://github.com/Mirza-Ishan-Beg/Datewise-Sheet-Generator" target="_blank">PROJECT LINK</a>
                 </div>
-                <div class="prof-github-cards card-color-gradient">
+                <div id="desktop" class="prof-github-cards card-color-gradient">
                     <img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!">
-                    <p class="font-type-terminal-like">UNDER CONSTRUCTION</p>
+                    <p id="desktop" class="font-type-terminal-like">UNDER CONSTRUCTION</p>
                 </div>
             </div>
         </div>
     </div>
+    <div>
+        <div id="mobile" class="container-content margin-bottom-4px">
+            <div id="mobile" class="container-intro intro-color-gradient">
+                <h2 id="mobile" class="center-title font-type-terminal-like">Welcome to my Portfolio!</h2>
+                <p id="mobile" class="center-title font-type-terminal-like">I am Mirza Ishan Beg, 2nd Year Computer Applications Student from India.</p>
+                <p id="mobile" class="center-title font-type-terminal-like">
+                    My enthusiam within web development, systems development as well as automation
+                    all together has molded me into capable software developer,
+                    and yes I also know how to exit Neovim and center a div.</p>
+            </div>
+            <div id="mobile" class="flex-container-prof-github-cards">
+                <div id="mobile" class="prof-github-cards card-color-gradient">
+                    <!--img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!"-->
+                    <h3 id="mobile" class="font-type-terminal-like-card-title">Repository Dependencies Checker</h3>
+                    <p id="mobile" class="font-type-terminal-like-card-para">Automation for python's venv libraries which checks for their PYPI documentation availability as well as their status of becoming outdated or not.</p>
+                    <a id="mobile" class="font-type-terminal-like-card-para card-project-link" href="https://github.com/Mirza-Ishan-Beg/Repository-Health-Checker" target="_blank">PROJECT LINK</a>
+                </div>
+            </div>
+            <div id="mobile" class="flex-container-prof-github-cards">
+                <div id="mobile" class="prof-github-cards card-color-gradient">
+                    <!--img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!"-->
+                    <h3 id="mobile" class="font-type-terminal-like-card-title">TimeTable Visualizer</h3>
+                    <p id="mobile" class="font-type-terminal-like-card-para">A simple python script that creates 24 hours clock based excel based time table visualized in high resolution .png pictures.</p>
+                    <a id="mobile" class="font-type-terminal-like-card-para card-project-link" href="https://github.com/Mirza-Ishan-Beg/Time-Table-Visualizer" target="_blank">PROJECT LINK</a>
+                </div>
+            </div>
+            <div id="mobile" class="flex-container-prof-github-cards">
+                <div id="mobile" class="prof-github-cards card-color-gradient">
+                    <!-- img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!"-->
+                    <h3 id="mobile" class="font-type-terminal-like-card-title">Obsidian Canvas Parser</h3>
+                    <p id="mobile" class="font-type-terminal-like-card-para">A simple C++ .canvas file to read and get check, unchecked bulletins and make .md file with its own stats.</p>
+                    <a id="mobile" class="font-type-terminal-like-card-para card-project-link" href="https://github.com/Mirza-Ishan-Beg/Obsidian-Canvas-Parser" target="_blank">PROJECT LINK</a>
+                </div>
+            </div>
+            <div id="mobile" class="flex-container-prof-github-cards">
+                <div id="mobile" class="prof-github-cards card-color-gradient">
+                    <!--img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!"-->
+                    <h3 id="mobile" class="font-type-terminal-like-card-title">Invoice Registry</h3>
+                <p id="mobile" class="font-type-terminal-like-card-para">Lightweight windows desktop application designed to log, manage, and track invoice records efficiently.</p>
+                    <a id="mobile" class="font-type-terminal-like-card-para card-project-link" href="https://github.com/Mirza-Ishan-Beg/InvoiceRegistry" target="_blank">PROJECT LINK</a>
+                </div>
+            </div>
+            <div id="mobile" class="flex-container-prof-github-cards">
+                <div id="mobile" class="prof-github-cards card-color-gradient">
+                    <!-- img style="width: 175px; height: 175px;" src="assets/Under-Construction.svg" alt="NO IMA   GE YET!!"-->
+                    <h3 id="mobile" class="font-type-terminal-like-card-title">Datewise Sheet Generator</h3>
+                    <p id="mobile" class="font-type-terminal-like-card-para">DSG (Datewise-Sheet-Generator) is an excel file generator, capable of generating repeated smaller chunks of a table and creating an organized, repeated tables content.</p>
+                    <a id="mobile" class="font-type-terminal-like-card-para card-project-link" href="https://github.com/Mirza-Ishan-Beg/Datewise-Sheet-Generator" target="_blank">PROJECT LINK</a>
+                </div>
+            </div>
+            <div id="mobile" class="flex-container-prof-github-cards">
+                <div id="mobile" class="prof-github-cards card-color-gradient">
+                    <img style="width: 75px; height: 75px;" src="assets/Under-Construction.svg" alt="NO IMAGE YET!!">
+                    <p id="mobile" class="font-type-terminal-like">UNDER CONSTRUCTION</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
