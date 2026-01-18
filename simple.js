@@ -6,7 +6,7 @@ function downloadResume(reference_site) {
     if (reference_site !== "NONE") {
         console.log("Resume Download is in process...");
         const a = document.createElement('a');
-        a.href = "/assets/Mirza_Ishan_Beg.docx";
+        a.href = "Portfolio/assets/Mirza_Ishan_Beg.docx";
         a.download = "Mirza_Ishan_Beg.docx";
         document.body.appendChild(a);
         a.click();
